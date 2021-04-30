@@ -17,7 +17,7 @@
       
           <div class="p-3 mb-0 bg-light border border-dark border-3" id="instancia">
             <div class="container-fluid">
-              <h1 class="display-6 fw-bold">Instancia</h1>
+              <h1 class="display-6 fw-bold" type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="(Memoria RAM) = SID => PRDSID">Instancia</h1>
               <div class="row align-items-md-stretch">
                 <!--PGA-->
                 <div class="col-4 border border-dark border-2 p-2">
@@ -31,6 +31,38 @@
                 <div class="col-8 border border-dark border-2 p-2">
                   <!--SGA-->
                   <h3><a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="infoOffCanvas">SGA</a></h3>
+                  <div class="row">
+                    <div class="card-group">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Buffer cache</h5>
+                          <p class="card-text">Memoria caché que guarda los data block de las queries que se van haciendo.</p>
+                          <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="btn btn-warning infoOffCanvas">Data Block</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <h5><a tabindex="0" class="bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Shared Pool" abbr="Shared Pool" data-bs-content="...">Shared Pool</a></h5>
+                          <a tabindex="0" class="btn btn-lg btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Library Cache" data-bs-content="...">Library Cache</a>
+                          <div class="btn-group btn-group-sm">
+                            <a tabindex="0" class="btn btn btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Data Dictionary" data-bs-content="...">Data Dictionary</a>
+                          <a tabindex="0" class="btn btn btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Result Cache" data-bs-content="...">Result Cache</a>
+                          <a tabindex="0" class="btn btn btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Active Session History" data-bs-content="...">ASH</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="btn-group-vertical">
+                            <a tabindex="0" class="btn btn-lg btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Large Pool" data-bs-content="...">Large Pool</a>
+                            <a tabindex="0" class="btn btn-lg btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Java Pool" data-bs-content="...">Java Pool</a>
+                            <a tabindex="0" class="btn btn-lg btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Stream Pool" data-bs-content="...">Stream Pool</a>
+                            <a tabindex="0" class="btn btn-lg btn-outline-dark bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Redo Log Buffer" data-bs-content="...">Redo</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -43,9 +75,18 @@
               
           </div>
 
+          <!--Capa fisica-->
           <div class="p-3 mb-4 mt-0 bg-light border border-dark border-3" id="capa_fisica">
             <div class="container-fluid">
               <h1 class="display-6 fw-bold">Capa física</h1>
+              <div class="card-deck">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
 
