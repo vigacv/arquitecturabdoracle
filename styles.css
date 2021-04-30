@@ -1,0 +1,16 @@
+#instancia{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
+
+#capa_fisica{
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+#interfaz{
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: black;
+}
