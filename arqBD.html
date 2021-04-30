@@ -68,9 +68,20 @@
             </div>
           </div>
       
+          <!--Background processes-->
           <div class="p-3 mb-0 mt-0 bg-warning" id="interfaz">
               <div class="container-fluid">
-                <h1 class="display-6 fw-bold">Interfaz</h1>
+                <h1><a tabindex="0" class="bdcomponent" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Background processes" data-bs-content="...">Background processes</a></h1>
+                <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="btn btn btn-outline-dark infoOffCanvas">LGWR</a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="btn btn btn-outline-dark infoOffCanvas">DBWR</a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="btn btn btn-outline-dark infoOffCanvas">CKPT</a>
+                <a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="btn btn btn-outline-dark infoOffCanvas">SMON</a>
+                <a tabindex="0" class="btn btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Process MONitor" data-bs-content="...">PMON</a>
+                <a tabindex="0" class="btn btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Listener Registration" data-bs-content="...">LREG</a>
+                <a tabindex="0" class="btn btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Listener Registration" data-bs-content="...">MMAN</a>
+                <a tabindex="0" class="btn btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="MMON Lite" data-bs-content="...">MMNL</a>
+                <a tabindex="0" class="btn btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Manageability Monitor" data-bs-content="...">MMON</a>
+                <a tabindex="0" class="btn btn-outline-dark bdcomponent m-2" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Recoverer" data-bs-content="...">RECO</a>
               </div>
               
           </div>
@@ -79,11 +90,40 @@
           <div class="p-3 mb-4 mt-0 bg-light border border-dark border-3" id="capa_fisica">
             <div class="container-fluid">
               <h1 class="display-6 fw-bold">Capa física</h1>
-              <div class="card-deck">
+              <div class="card-group">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Datafiles</h5>
+                    <p class="card-text">Persistencia de los datos (*.dbf).</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Tempfiles</h5>
+                    <p class="card-text">Memoria virtual / swap del workarea (*.dbf).</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Redo Log Files</h5>
+                    <p class="card-text">Persistencia del Redo Log Buffer(*.log). *NO BORRAR*</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title"><a data-bs-toggle="offcanvas" href="#offcanvasBottom" role="button" aria-controls="offcanvasBottom" class="infoOffCanvas">Parameter File</a></h5>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">PFILE</h5>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <h5 class="card-title">SPFILE</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Control File</h5>
+                    <p class="card-text">Metadata de la bd. Nombre de la capa física, qué datafiles existen y donde estan, tempfiles, redologs, SCN, Incarnation...</p>
                   </div>
                 </div>
               </div>
