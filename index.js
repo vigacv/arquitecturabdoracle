@@ -116,11 +116,15 @@ var diccComponents = {
     },
     "MMON":{
         "titleComp": "Manageability Monitor",
-        "desc": "Desde 10g. Toma fotos a la estructura de la BD (como esta el PGA, cuanta memoria ocupa, como estan los discos, etc.) y lo encapsula en snapshots. Ocurre cada hora y permanece por 8 dias por default."
+        "desc": "Desde 10g. Toma fotos a la estructura de la BD (como esta el PGA, cuanta memoria ocupa, como estan los discos, etc.) y lo encapsula en snapshots. Ocurre cada hora y permanece por 8 dias por default. Tambien se encarga de borrar los archivos trace."
     },
     "RECO":{
         "titleComp": "Recoverer",
         "desc": "Se usa en dblink, para confirmar transacciones entre bases de datos remotas, y cancelarlas si es necesario."
+    },
+    "SMCO":{
+        "titleComp": "Space Management Coordinator",
+        "desc": "Responsable de asegurar que haya espacio en los tablespaces."
     }
 }
 
